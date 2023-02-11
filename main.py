@@ -10,7 +10,7 @@ from dataclasses import dataclass
 @dataclass
 class DegreeOfProfanity:
     """This class shall be used for the computation of `Degree of Profanity` for each tweet in the given
-    list of tweets "tweets".
+    list of tweets ~ "tweets".
 
     Args:
         tweets (List): List whose each element represents a tweet made by a certain user in the `str` format.
@@ -73,4 +73,4 @@ class DegreeOfProfanity:
 # Now, the degree of profanities can be assigned to the df_tweets accordingly.
 # degree_of_profanity = DegreeOfProfanity(tweets=tweets, racial_slurs=racial_slurs)
 # tweets_dop = degree_of_profanity.compute()
-# df_tweets["Degree of Profanity"] = degree_of_profanity
+# df_tweets["Degree of Profanity"] = tweets_dop
